@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smile Boutique: Prices</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              c_blue: "#0dc4ba",
+              c_purple: "#7400B8",
+            },
+          },
+          container: {
+            center: true,
+            padding: {
+              DEFAULT: "15px",
+              sm: "15px",
+              md: "15px",
+              lg: "30px",
+              xl: "32px",
+            },
+          },
+          fontFamily: {
+            comforta: "Comfortaa",
+          },
+        },
+      };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="font-comforta">
+    <header
+      class="px-[15px] sm:px-[15px] md:px-[15px] lg:px-[30px] xl:px-[32px] 2xl:px-[48px] sticky z-20 bg-white shadow-md shadow-slate-200 top-0 flex flex-row items-center justify-between"
+    >
+      <a href="index.html"
+        ><img
+          class="w-[150px] h-[69px] sm:w-[200px] sm:h-[92px]"
+          src="https://ik.imagekit.io/ekbcszw7tx/Smile%20Boutique/main_logo.svg"
+          alt=""
+      /></a>
+      <div class="hidden xl:flex xl:flex-row xl:items-center xl:gap-9">
+        <ul class="flex flex-row items-center gap-9 font-medium">
+          <li>
+            <a href="index.html" rel="noopener noreferrer">Home</a>
+          </li>
+          <li>
+            <select>
+              <option value="">About us</option>
+              <option value=""></option>
+            </select>
+          </li>
+          <li class="text-c_blue">
+            <a href="prices.html" rel="noopener noreferrer">Prices</a>
+          </li>
+          <li>
+            <select>
+              <option value="">Services</option>
+              <option value=""></option>
+            </select>
+          </li>
+          <li>
+            <a href="" rel="noopener noreferrer">Contacts</a>
+          </li>
+        </ul>
+        <img
+          class=""
+          src="https://ik.imagekit.io/ekbcszw7tx/Smile%20Boutique/moon.svg?w=100"
+          alt=""
+        />
+        <select class="text-c_blue border-[1px] border-c_blue">
+          <option value="lang">en</option>
+          <option value="lang">ru</option>
+          <option value="lang">uz</option>
+        </select>
+      </div>
+      <button
+        class="hidden xl:px-6 xl:flex py-[10px] rounded-lg text-white bg-c_blue before:bg-violet-800 hover:border-violet-800 border-cyan-500 hover:!text-[#ebf8f9] relative duration-500 z-10 border-2 isolation-auto overflow-hidden before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full before:-z-10 before:aspect-square before:hover:scale-150 before:hover:duration-700"
+      >
+        <a href="tel:+998 (93) 577-96-09">+998 (93) 577-96-09</a>
+      </button>
+      <div class="flex flex-row items-center gap-5 xl:hidden">
+        <i
+          class="fa-solid fa-square-phone text-c_blue text-[30px] xl:text-[31.2px]"
+        ></i>
+        <i
+          class="fa-solid fa-bars text-c_blue text-[27px] xl:text-[31.2px]"
+        ></i>
+      </div>
+    </header>
+    <main class="flex flex-col items-center gap-10">
+      <div
+        class="w-full h-[350px] bg-[url('https://ik.imagekit.io/ekbcszw7tx/Smile%20Boutique/breadcrumbLight.png?updatedAt=1717767886176')] bg-center bg-cover"
+      >
+        <div
+          class="flex flex-col items-center justify-center text-white h-[350px] gap-1"
+        >
+          <div class="flex flex-row items-center gap-2 text-sm">
+            <p class="font-semibold duration-300 hover:cursor-pointer hover:text-black">
+              <a href="index.html">Home</a></p>
+            <i class="fa-solid fa-chevron-right" style="color: #ffffff"></i>
+            <p class="font-semibold duration-300 hover:cursor-pointer hover:text-black">Prices</p>
+          </div>
+          <p class="text-xl font-medium">Prices</p>
+        </div>
+      </div>
+      <div class="container">
+        <table class="w-full">
+          <thead>
+            <tr class="bg-c_blue text-white border border-black">
+              <th class="py-3 text-lg xl:py-3 xl:text-lg sm:text-2xl">
+                Service
+              </th>
+              <th
+                class="py-3 px-5 border border-black text-lg xl:py-3 xl:border xl:border-black xl:text-lg sm:text-2xl"
+                colspan="2"
+              >
+                Price
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td
+                class="px-3 py-3 border border-black text-xs w-max sm:text-sm xl:px-3 xl:py-3 xl:border xl:border-black"
+              >
+                Consultation (examination)
+              </td>
+              <td
+                class="px-3 py-3 border border-black text-end text-sm opacity-85 xl:px-3 xl:py-3 xl:border xl:border-black xl:text-end"
+                colspan="2"
+              >
+                200.000
+              </td>
+            </tr>
+
+            <tr
+              class="bg-c_blue text-white border border-black text-center text-lg font-bold"
+            >
+              <td class="py-3" colspan="2">Anesthesia</td>
+              <td
+                class="py-3 border border-black border-l-c_blue text-lg xl:border-l-c_blue xl:py-3 xl:border xl:border-black xl:text-lg sm:text-2xl"
+              ></td>
+            </tr>
+
+            <tr>
+              <td
+                class="px-3 py-3 border border-b border-b-transparent xl:border-b-transparent border-black text-xs w-max sm:text-sm xl:px-3 xl:py-3 xl:border xl:border-black"
+              >
+                Anesthesia (articaine)
+              </td>
+              <td
+                class="px-3 py-3 border border-b border-b-transparent xl:border-b-transparent border-black text-end text-sm opacity-85 xl:px-3 xl:py-3 xl:border xl:border-black xl:text-end"
+                colspan="2"
+              >
+                120.000
+              </td>
+            </tr>
+
+            <tr>
+              <td
+                class="px-3 py-3 border border-b border-b-transparent xl:border-b-transparent border-black text-xs md:text-base w-max sm:text-sm xl:px-3 xl:py-3 xl:border xl:border-black"
+              >
+                Anesthesia (superkain)
+              </td>
+              <td
+                class="px-3 py-3 border border-b border-b-transparent xl:border-b-transparent border-black text-end text-sm md:text-base opacity-85 xl:px-3 xl:py-3 xl:border xl:border-black xl:text-end"
+                colspan="2"
+              >
+                60.000
+              </td>
+            </tr>
+
+            <tr
+              class="bg-c_blue text-white border border-black text-center text-lg font-bold"
+            >
+              <td class="py-3" colspan="2">Therapy</td>
+              <td
+                class="py-3 border border-black border-l-c_blue xl:border-l-c_blue text-lg xl:py-3 xl:border xl:border-black xl:text-lg sm:text-2xl"
+              ></td>
+            </tr>
+
+            <tr
+              class="text-c_blue border border-black text-start text-base font-semibold"
+            >
+              <td class="py-3 px-3" colspan="2">Mucus treatment</td>
+              <td
+                class="py-3 border border-black border-l-transparent xl:border-l-transparent text-lg xl:py-3 xl:border xl:border-black xl:text-lg sm:text-2xl"
+              ></td>
+            </tr>
+
+            <tr>
+              <td
+                class="px-3 py-3 border border-b border-b-transparent xl:border-b-transparent border-black text-xs w-max sm:text-sm md:text-base xl:px-3 xl:py-3 xl:border xl:border-black"
+              >
+                Injection of lincomycin, Vit C
+              </td>
+              <td
+                class="px-3 py-3 border border-b border-b-transparent xl:border-b-transparent border-black text-end text-sm md:text-base opacity-85 xl:px-3 xl:py-3 xl:border xl:border-black xl:text-end"
+                colspan="2"
+              >
+                120.000
+              </td>
+            </tr>
+
+            <tr>
+              <td
+                class="px-3 py-3 border border-black text-xs w-max md:text-base xl:px-3 xl:py-3 xl:border xl:border-black"
+              >
+                Medication treatment of oral mucosa
+              </td>
+              <td
+                class="px-3 py-3 border border-black text-end text-sm md:text-base opacity-85 xl:px-3 xl:py-3 xl:border xl:border-black xl:text-end"
+                colspan="2"
+              >
+                10.000
+              </td>
+            </tr>
+
+            <tr
+              class="text-c_blue border border-black text-start text-base font-bold"
+            >
+              <td class="py-3 px-3" colspan="2">
+                Endodontics (Pulpotomy, mechanical-medicated canal treatment)
+              </td>
+              <td
+                class="py-3 border border-black border-l-transparent xl:border-l-transparent text-lg xl:py-3 xl:border xl:border-black xl:text-lg sm:text-2xl"
+              ></td>
+            </tr>
+
+            <tr>
+              <td
+                class="px-3 py-3 border border-b border-b-transparent xl:border-b-transparent border-black text-xs w-max sm:text-sm md:text-base xl:px-3 xl:py-3 xl:border xl:border-black"
+              >
+                Depulpation of a single-root tooth with GUTTAPERCHA filling
+              </td>
+              <td
+                class="px-3 py-3 border border-b border-b-transparent xl:border-b-transparent border-black text-end text-sm md:text-base opacity-85 xl:px-3 xl:py-3 xl:border xl:border-black xl:text-end"
+                colspan="2"
+              >
+                350.000
+              </td>
+            </tr>
+
+            <tr>
+              <td
+                class="px-3 py-3 border border-b border-b-transparent xl:border-b-transparent border-black text-xs w-max sm:text-sm md:text-base xl:px-3 xl:py-3 xl:border xl:border-black"
+              >
+                Depulpation of a double-root tooth with GUTTAPERCHA filling
+              </td>
+              <td
+                class="px-3 py-3 border border-b border-b-transparent xl:border-b-transparent border-black text-end text-sm md:text-base opacity-85 xl:px-3 xl:py-3 xl:border xl:border-black xl:text-end"
+                colspan="2"
+              >
+                500.000
+              </td>
+            </tr>
+
+            <tr>
+              <td
+                class="px-3 py-3 border border-b border-b-transparent xl:border-b-transparent border-black text-xs w-max sm:text-sm md:text-base xl:px-3 xl:py-3 xl:border xl:border-black"
+              >
+                Depulpation of a triple-root tooth with GUTTAPERCHA filling
+              </td>
+              <td
+                class="px-3 py-3 border border-b border-b-transparent xl:border-b-transparent border-black text-end text-sm md:text-base opacity-85 xl:px-3 xl:py-3 xl:border xl:border-black xl:text-end"
+                colspan="2"
+              >
+                700.000
+              </td>
+            </tr>
+
+            <tr>
+              <td
+                class="px-3 py-3 border border-b border-b-transparent xl:border-b-transparent border-black text-xs w-max sm:text-sm md:text-base xl:px-3 xl:py-3 xl:border xl:border-black"
+              >
+                Re-cleaning of a single-root canal
+              </td>
+              <td
+                class="px-3 py-3 border border-b border-b-transparent xl:border-b-transparent border-black text-end text-sm md:text-base opacity-85 xl:px-3 xl:py-3 xl:border xl:border-black xl:text-end"
+                colspan="2"
+              >
+                130.000
+              </td>
+            </tr>
+
+            <tr>
+              <td
+                class="px-3 py-3 border border-b border-b-transparent xl:border-b-transparent border-black text-xs w-max sm:text-sm md:text-base xl:px-3 xl:py-3 xl:border xl:border-black"
+              >
+                Re-cleaning of a double-root canal
+              </td>
+              <td
+                class="px-3 py-3 border border-b border-b-transparent xl:border-b-transparent border-black text-end text-sm md:text-base opacity-85 xl:px-3 xl:py-3 xl:border xl:border-black xl:text-end"
+                colspan="2"
+              >
+                230.000
+              </td>
+            </tr>
+
+            <tr>
+              <td
+                class="px-3 py-3 border border-b border-b-transparent xl:border-b-transparent border-black text-xs md:text-base w-max sm:text-sm xl:px-3 xl:py-3 xl:border xl:border-black"
+              >
+                Re-cleaning of a triple-root canal
+              </td>
+              <td
+                class="px-3 py-3 border border-b border-b-transparent xl:border-b-transparent border-black text-end text-sm md:text-base opacity-85 xl:px-3 xl:py-3 xl:border xl:border-black xl:text-end"
+                colspan="2"
+              >
+                330.000
+              </td>
+            </tr>
+
+            <tr>
+              <td
+                class="px-3 py-3 border border-black text-xs w-max sm:text-sm md:text-base xl:px-3 xl:py-3 xl:border xl:border-black"
+              >
+                Exudate drainage, periodontitis treatment each visit
+              </td>
+              <td
+                class="px-3 py-3 border border-black text-end text-sm md:text-base opacity-85 xl:px-3 xl:py-3 xl:border xl:border-black xl:text-end"
+                colspan="2"
+              >
+                150.000
+              </td>
+            </tr>
+
+            <tr
+              class="text-c_blue border border-black text-start text-base font-semibold"
+            >
+              <td class="py-3 px-3" colspan="2">Posts</td>
+              <td
+                class="py-3 border border-black border-l-transparent xl:border-l-transparent text-lg xl:py-3 xl:border xl:border-black xl:text-lg sm:text-2xl"
+              ></td>
+            </tr>
+
+            <tr>
+              <td
+                class="px-3 py-3 border border-b border-b-transparent xl:border-b-transparent border-black text-xs w-max sm:text-sm md:text-base xl:px-3 xl:py-3 xl:border xl:border-black"
+              >
+                Glass fiber past
+              </td>
+              <td
+                class="px-3 py-3 border border-b border-b-transparent xl:border-b-transparent border-black text-end text-sm md:text-base opacity-85 xl:px-3 xl:py-3 xl:border xl:border-black xl:text-end"
+                colspan="2"
+              >
+                400.000
+              </td>
+            </tr>
+
+            <tr>
+              <td
+                class="px-3 py-3 border border-b border-b-transparent xl:border-b-transparent border-black text-xs md:text-base w-max sm:text-sm xl:px-3 xl:py-3 xl:border xl:border-black"
+              >
+                Cast past
+              </td>
+              <td
+                class="px-3 py-3 border border-b border-b-transparent xl:border-b-transparent border-black text-end text-sm md:text-base opacity-85 xl:px-3 xl:py-3 xl:border xl:border-black xl:text-end"
+                colspan="2"
+              >
+                450.000
+              </td>
+            </tr>
+
+            <tr>
+              <td
+                class="px-3 py-3 border border-b border-b-transparent xl:border-b-transparent border-black text-xs md:text-base w-max sm:text-sm xl:px-3 xl:py-3 xl:border xl:border-black"
+              >
+                Anchor past
+              </td>
+              <td
+                class="px-3 py-3 border border-b border-b-transparent xl:border-b-transparent border-black text-end text-sm md:text-base opacity-85 xl:px-3 xl:py-3 xl:border xl:border-black xl:text-end"
+                colspan="2"
+              >
+                300.000
+              </td>
+            </tr>
+
+            <tr>
+              <td
+                class="px-3 py-3 border border-black text-xs md:text-base w-max xl:px-3 xl:py-3 xl:border xl:border-black"
+              >
+                Temporary filling (Dentin paste)
+              </td>
+              <td
+                class="px-3 py-3 border border-black text-end text-sm md:text-base opacity-85 xl:px-3 xl:py-3 xl:border xl:border-black xl:text-end"
+                colspan="2"
+              >
+                80.000
+              </td>
+            </tr>
+
+            <tr
+              class="text-c_blue border border-black text-start text-base font-semibold"
+            >
+              <td class="py-3 px-3" colspan="2">
+                Fillings and artistic restorations
+              </td>
+              <td
+                class="py-3 border border-black border-l-transparent xl:border-l-transparent text-lg xl:py-3 xl:border xl:border-black xl:text-lg sm:text-2xl"
+              ></td>
+            </tr>
+
+            <tr>
+              <td
+                class="px-3 py-3 border border-b border-b-transparent xl:border-b-transparent border-black text-xs md:text-base w-max sm:text-sm xl:px-3 xl:py-3 xl:border xl:border-black"
+              >
+                Light-cured filling (Korea)
+              </td>
+              <td
+                class="px-3 py-3 border border-b border-b-transparent xl:border-b-transparent border-black text-end text-sm md:text-base opacity-85 xl:px-3 xl:py-3 xl:border xl:border-black xl:text-end"
+                colspan="2"
+              >
+                500.000
+              </td>
+            </tr>
+
+            <tr>
+              <td
+                class="px-3 py-3 border border-b border-b-transparent xl:border-b-transparent border-black text-xs md:text-base w-max sm:text-sm xl:px-3 xl:py-3 xl:border xl:border-black"
+              >
+                Artistic restoration of chewing group teeth
+              </td>
+              <td
+                class="px-3 py-3 border border-b border-b-transparent xl:border-b-transparent border-black text-end text-sm md:text-base opacity-85 xl:px-3 xl:py-3 xl:border xl:border-black xl:text-end"
+                colspan="2"
+              >
+                800.000 – 1.200.000
+              </td>
+            </tr>
+
+            <tr>
+              <td
+                class="px-3 py-3 border border-b border-b-transparent xl:border-b-transparent border-black text-xs md:text-base w-max sm:text-sm xl:px-3 xl:py-3 xl:border xl:border-black"
+              >
+                Artistic restoration of front group teeth
+              </td>
+              <td
+                class="px-3 py-3 border border-b border-b-transparent xl:border-b-transparent border-black text-end text-sm md:text-base opacity-85 xl:px-3 xl:py-3 xl:border xl:border-black xl:text-end"
+                colspan="2"
+              >
+                1.000.000 – 1.500.000
+              </td>
+            </tr>
+
+            <tr>
+              <td
+                class="px-3 py-3 border border-black text-xs md:text-base w-max xl:px-3 xl:py-3 xl:border xl:border-black"
+              >
+                Composite veneers
+              </td>
+              <td
+                class="px-3 py-3 border border-black text-end text-sm md:text-base opacity-85 xl:px-3 xl:py-3 xl:border xl:border-black xl:text-end"
+                colspan="2"
+              >
+                1.200.000 – 1.800.000
+              </td>
+            </tr>
+
+            <tr
+              class="text-c_blue border border-black text-start text-base font-semibold"
+            >
+              <td class="py-3 px-3" colspan="2">
+                Teeth whitening and professional cleaning
+              </td>
+              <td
+                class="py-3 border border-black border-l-transparent xl:border-l-transparent text-lg xl:py-3 xl:border xl:border-black xl:text-lg sm:text-2xl"
+              ></td>
+            </tr>
+
+            <tr>
+              <td
+                class="px-3 py-3 border border-b border-b-transparent xl:border-b-transparent border-black text-xs md:text-base w-max sm:text-sm xl:px-3 xl:py-3 xl:border xl:border-black"
+              >
+                Teeth whitening (Home)
+              </td>
+              <td
+                class="px-3 py-3 border border-b border-b-transparent xl:border-b-transparent border-black text-end text-sm md:text-base opacity-85 xl:px-3 xl:py-3 xl:border xl:border-black xl:text-end"
+                colspan="2"
+              >
+                1.800.000
+              </td>
+            </tr>
+
+            <tr>
+              <td
+                class="px-3 py-3 border border-b border-b-transparent xl:border-b-transparent border-black text-xs md:text-base w-max sm:text-sm xl:px-3 xl:py-3 xl:border xl:border-black"
+              >
+                Teeth whitening (Office)
+              </td>
+              <td
+                class="px-3 py-3 border border-b border-b-transparent xl:border-b-transparent border-black text-end text-sm md:text-base opacity-85 xl:px-3 xl:py-3 xl:border xl:border-black xl:text-end"
+                colspan="2"
+              >
+                2.800.000
+              </td>
+            </tr>
+
+            <tr>
+              <td
+                class="px-3 py-3 border border-b border-b-transparent xl:border-b-transparent border-black text-xs md:text-base w-max sm:text-sm xl:px-3 xl:py-3 xl:border xl:border-black"
+              >
+                Teeth whitening (Beyond Polus)
+              </td>
+              <td
+                class="px-3 py-3 border border-b border-b-transparent xl:border-b-transparent border-black text-end text-sm md:text-base opacity-85 xl:px-3 xl:py-3 xl:border xl:border-black xl:text-end"
+                colspan="2"
+              >
+                5.500.000
+              </td>
+            </tr>
+
+            <tr>
+              <td
+                class="px-3 py-3 border border-b border-b-transparent xl:border-b-transparent border-black text-xs md:text-base w-max sm:text-sm xl:px-3 xl:py-3 xl:border xl:border-black"
+              >
+                Professional teeth cleaning (Ultrasonic)
+              </td>
+              <td
+                class="px-3 py-3 border border-b border-b-transparent xl:border-b-transparent border-black text-end text-sm md:text-base opacity-85 xl:px-3 xl:py-3 xl:border xl:border-black xl:text-end"
+                colspan="2"
+              >
+                600.000
+              </td>
+            </tr>
+
+            <tr>
+              <td
+                class="px-3 py-3 border border-black text-xs md:text-base w-max sm:text-sm xl:px-3 xl:py-3 xl:border xl:border-black"
+              >
+                Professional teeth cleaning (Air-Flow)
+              </td>
+              <td
+                class="px-3 py-3 border border-black text-end text-sm md:text-base opacity-85 xl:px-3 xl:py-3 xl:border xl:border-black xl:text-end"
+                colspan="2"
+              >
+                1.000.000
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+    
+    <footer class="container py-5 flex flex-col items-center gap-7">
+      <div class="flex flex-col items-start gap-12">
+        <div class="flex flex-col items-center justify-center lg:w-[90vw]">
+          <img
+            src="https://ik.imagekit.io/ekbcszw7tx/Smile%20Boutique/main_logo.svg"
+            alt=""
+          />
+          <h1 class="text-sm text-center">
+            Dental health - in a reliable clinic!
+          </h1>
+        </div>
+        <div class="lg:flex lg:flex-row lg:items-start">
+        <div class="flex flex-col items-start sm:flex-row sm:justify-between sm:gap-40">
+        <ul class="flex flex-col items-start gap-3">
+          <li class="mb-3 uppercase opacity-60 font-bold">About us</li>
+          <li>About the clinic</li>
+          <li>Photo gallery</li>
+          <li>Doctors</li>
+          <li>Prices</li>
+          <li>Contacts</li>
+        </ul>
+        <ul class="flex flex-col items-start gap-3">
+          <li class="mb-3 uppercase opacity-60 font-bold">Services</li>
+          <li>Veneers</li>
+          <li>Dental treatment</li>
+          <li>Dental implantation</li>
+          <li>Teeth whitening</li>
+          <li>Teeth cleaning</li>
+        </ul></div>
+        <div class="flex flex-col items-start gap-3 text-sm lg:ml-52">
+          <h1 class="mb-3 uppercase opacity-60 font-bold text-sm text-center">
+            Contacts
+          </h1>
+          <div class="flex flex-row items-center justify-between gap-5 sm:gap-56 lg:gap-5">
+            <h1 class="text-c_blue">Address:</h1>
+            <span class="text-right">Tashkent, st. Gulkhaniy, 11</span>
+          </div>
+          <div class="flex flex-row items-center justify-between gap-5 sm:gap-72 lg:gap-5">
+            <h1 class="text-c_blue">Телефон:</h1>
+            <span class="">+998-99-876-88-55</span>
+          </div>
+          <div class="flex flex-row items-center justify-between gap-5 sm:gap-64 lg:gap-5">
+            <h1 class="text-c_blue">E-Mail:</h1>
+            <span class="text-right">Info@smileboutique.uz</span>
+          </div>
+          <div class="flex flex-row items-center justify-between gap-5 sm:gap-72 lg:gap-5">
+            <h1 class="text-c_blue">Opening hours:</h1>
+            <span class="">10:00-20:00</span>
+          </div>
+        </div>
+      </div></div>
+      <div class="flex flex-col items-center justify-center gap-2">
+        <div class="h-[1px] w-full border border-gray-500 bg-black sm:w-[75vw] lg:w-[90vw]"></div>
+        <div class="flex flex-col items-center justify-center gap-5 xl:flex-row xl:justify-between w-[90vw]">
+          <span class="text-[13px] mt-2">© 2024 Smile Boutique. All Rights Reserved.</span>
+          <div class="flex flex-row items-center justify-center gap-4 text-xl text-c_blue">
+            <i class="fa-brands fa-telegram opacity-60 hover:opacity-100 hover:scale-110 duration-300"></i>
+            <i class="fa-brands fa-facebook opacity-60 hover:opacity-100 hover:scale-110 duration-300"></i>
+            <i class="fa-brands fa-instagram opacity-60 hover:opacity-100 hover:scale-110 duration-300"></i>
+            <i class="fa-brands fa-youtube opacity-60 hover:opacity-100 hover:scale-110 duration-300"></i>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
